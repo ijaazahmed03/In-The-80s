@@ -1,16 +1,24 @@
-# Admer's SoHL 1.2 for VS2019
+# What is this repository?
+* Code for my HL1 mod-in-progress, currently titled "In The 80s". I may also add "experimental" branches of random code if I feel like it. You'll see.
+
+## Based on: Admer's SoHL 1.2 for VS2019
   
-Based on [Solokiller's updated SDK](https://github.com/Solokiller/halflife-updated) and [Spirit of Half-Life 1.2](https://www.moddb.com/mods/spirit-of-half-life/downloads/sohl-v12-with-source-code). Also contains some new entities, new functionality and small bugfixes.   
+* Based on [Solokiller's updated SDK](https://github.com/Solokiller/halflife-updated) and [Spirit of Half-Life 1.2](https://www.moddb.com/mods/spirit-of-half-life/downloads/sohl-v12-with-source-code). 
+* Also: some new entities, new functionality, small bugfixes.   
 
 ## Differences from vanilla SoHL 1.2
 
-First of all, it's based on Solokiller's updated HL SDK, which by itself is based on [HL SDK 2.4](https://github.com/ValveSoftware/halflife). It is ideal for Steam Half-Life, but it won't run on WON Half-Life or any pre-2013 build of GoldSrc.  
+* Based on Solokiller's updated HL SDK, which (by itself) is based on [HL SDK 2.4](https://github.com/ValveSoftware/halflife). 
+* It is ideal for Steam Half-Life, but it **won't run on** **WON** Half-Life or any **pre-2013** build of GoldSrc (a.k.a Pre-Steampipe).  
 
-The new entities include:  
+Admer added two new entities:  
 * ambient_mp3 - plays MP3s from the `media` folder by name
 * ambient_2d - plays 2D WAV sounds on the client, there's no stereo panning that happens with ambient_generic  
 
-Other than that, it features a wireframe overlay for entity bounding boxes and player movement, small bugfixes and other minor enhancements. 
+Also features a wireframe overlay for entity bounding boxes and player movement, small bugfixes and other minor enhancements. 
+
+**There is history and SDK license below this line, feel free to scroll below if you want to know more.**
+
 
 ## Why?
 
