@@ -20,7 +20,7 @@
 
 CWeaponRegistry* CWeaponRegistry::m_pHead = NULL;
 
-//seems like an entirely new files added by solokiller
+//seems like an entirely new file added by solokiller
 // most edits tagged with "solokiller" were added by IjaazCM3 on Aug 1 2020
 // here is a list of all changes to this, EXCLUDING the changes Admer456 made to this to update it for VS2019
 
