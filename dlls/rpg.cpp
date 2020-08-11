@@ -156,6 +156,7 @@ void CRpgRocket :: Spawn( void )
 	pev->angles.x -= 30;
 	UTIL_MakeVectors( pev->angles );
 	pev->angles.x = -(pev->angles.x + 30);
+	pev->angles.x = -(pev->angles.x + 30); //+ 30
 
 	pev->velocity = gpGlobals->v_forward * 250;
 	pev->gravity = 0.5;
@@ -476,6 +477,7 @@ void CRpg::PrimaryAttack()
 		UTIL_MakeVectors( m_pPlayer->pev->v_angle );
 		Vector vecSrc = m_pPlayer->GetGunPosition( ) + gpGlobals->v_forward * 16 + gpGlobals->v_right * 8 + gpGlobals->v_up * -8;
 		
+		// (16, 8, -8) originally, I changed it to 0 0 0 for test and it gives quake1-style rockets appearing above your head
 		CRpgRocket *pRocket = CRpgRocket::CreateRpgRocket( vecSrc, m_pPlayer->pev->v_angle, m_pPlayer, this );
 
 		UTIL_MakeVectors( m_pPlayer->pev->v_angle );// RpgRocket::Create stomps on globals, so remake.
